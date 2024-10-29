@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+  int num;
+  printf("Enter a number:");
+  scanf("%d",&num);
+  if (isBouncy )
+  {
+    printf("True\n ");
+  }
+  else
+  {
+      printf("False\n");
+  }
+  return 0;
+}
