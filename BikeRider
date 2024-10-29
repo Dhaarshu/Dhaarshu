@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main() {
+    int maxFuel,mileage,distance;
+    printf("Enter max fuel capacity,mileage,and distance between fuel stations:");
+    scanf("%d %d %d",&maxFuel,&mileage,&distance);
+    
+    int maxDistance = maxFuel*mileage;
+    
+    int requiredDistance =1000;
+    
+    if(maxDistance <distance)
+    {
+        printf("-1\n");
+        return 0;
+        
+    }
+    int refuels=0,travelled =0;
+    while(travelled + maxDistance < requiredDistance)
+    {
+        travelled += distance;
+        refuels++;
+    }
+    printf("%d\n",refuels);
+    return 0;
